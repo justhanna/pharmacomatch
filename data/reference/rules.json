@@ -1,0 +1,81 @@
+{
+  "version": "1.0",
+  "source": "PharmGKB / CPIC simplified",
+  "guidelines": [
+    {
+      "gene": "CYP2D6",
+      "rsid": "rs1065852",
+      "drug": "Codeine",
+      "risk_matrix": {
+        "AA": {
+          "phenotype": "Poor Metabolizer",
+          "risk_level": "High",
+          "action": "Avoid drug",
+          "recommendation": "Markedly reduced morphine production leading to lack of analgesic effect. Use alternative non-opioid or alternative opioid."
+        },
+        "AG": {
+          "phenotype": "Intermediate Metabolizer",
+          "risk_level": "Moderate",
+          "action": "Dose adjustment",
+          "recommendation": "Reduced morphine formation. Monitor response closely or adjust dosage."
+        },
+        "GG": {
+          "phenotype": "Normal Metabolizer",
+          "risk_level": "Low",
+          "action": "Standard dosing",
+          "recommendation": "Normal enzymatic conversion. Standard therapeutic dose recommended."
+        }
+      }
+    },
+    {
+      "gene": "CYP2C19",
+      "rsid": "rs4244285",
+      "drug": "Clopidogrel",
+      "risk_matrix": {
+        "AA": {
+          "phenotype": "Poor Metabolizer",
+          "risk_level": "High",
+          "action": "Contraindicated",
+          "recommendation": "Substantially reduced active metabolite exposure. High risk of cardiovascular events/stent thrombosis. Alternative antiplatelet (e.g., Prasugrel, Ticagrelor) recommended."
+        },
+        "AG": {
+          "phenotype": "Intermediate Metabolizer",
+          "risk_level": "Moderate",
+          "action": "Alternative recommended",
+          "recommendation": "Reduced platelet inhibition. Alternative antiplatelet recommended."
+        },
+        "GG": {
+          "phenotype": "Normal Metabolizer",
+          "risk_level": "Low",
+          "action": "Standard dosing",
+          "recommendation": "Normal platelet inhibition response. Standard therapeutic dose recommended."
+        }
+      }
+    },
+    {
+      "gene": "SLCO1B1",
+      "rsid": "rs4149056",
+      "drug": "Simvastatin",
+      "risk_matrix": {
+        "CC": {
+          "phenotype": "Poor Transporter Function",
+          "risk_level": "High",
+          "action": "Lower dose or substitute",
+          "recommendation": "Markedly elevated plasma concentrations of simvastatin acid. High risk of myopathy/rhabdomyolysis. Prescribe lower dose or switch to pravastatin/rosuvastatin."
+        },
+        "CT": {
+          "phenotype": "Decreased Transporter Function",
+          "risk_level": "Moderate",
+          "action": "Cautious dosing",
+          "recommendation": "Intermediate plasma levels. Avoid doses exceeding 20 mg daily."
+        },
+        "TT": {
+          "phenotype": "Normal Transporter Function",
+          "risk_level": "Low",
+          "action": "Standard dosing",
+          "recommendation": "Typical hepatic uptake. Standard dosing guidelines apply."
+        }
+      }
+    }
+  ]
+}
