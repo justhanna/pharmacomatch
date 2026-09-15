@@ -1,6 +1,6 @@
 {
-  "version": "1.0",
-  "source": "PharmGKB / CPIC simplified",
+  "version": "1.1",
+  "source": "PharmGKB / CPIC guidelines",
   "guidelines": [
     {
       "gene": "CYP2D6",
@@ -11,19 +11,19 @@
           "phenotype": "Poor Metabolizer",
           "risk_level": "High",
           "action": "Avoid drug",
-          "recommendation": "Markedly reduced morphine production leading to lack of analgesic effect. Use alternative non-opioid or alternative opioid."
+          "recommendation": "Brak przekształcania w morfinę. Brak efektu przeciwbólowego. Zastosuj lek alternatywny (np. niesteroidowe leki przeciwzapalne lub inny opioid)."
         },
         "AG": {
           "phenotype": "Intermediate Metabolizer",
           "risk_level": "Moderate",
           "action": "Dose adjustment",
-          "recommendation": "Reduced morphine formation. Monitor response closely or adjust dosage."
+          "recommendation": "Zmniejszona synteza morfiny. Monitoruj odpowiedź terapeutyczną pacjenta lub dostosuj dawkę."
         },
         "GG": {
           "phenotype": "Normal Metabolizer",
           "risk_level": "Low",
           "action": "Standard dosing",
-          "recommendation": "Normal enzymatic conversion. Standard therapeutic dose recommended."
+          "recommendation": "Prawidłowy metabolizm. Stosuj zalecaną dawkę standardową."
         }
       }
     },
@@ -36,19 +36,19 @@
           "phenotype": "Poor Metabolizer",
           "risk_level": "High",
           "action": "Contraindicated",
-          "recommendation": "Substantially reduced active metabolite exposure. High risk of cardiovascular events/stent thrombosis. Alternative antiplatelet (e.g., Prasugrel, Ticagrelor) recommended."
+          "recommendation": "Znacząco obniżone stężenie aktywnego metabolitu. Wysokie ryzyko incydentów zakrzepowych. Zalecana zmiana na prasugrel lub tikagrelor."
         },
         "AG": {
           "phenotype": "Intermediate Metabolizer",
           "risk_level": "Moderate",
           "action": "Alternative recommended",
-          "recommendation": "Reduced platelet inhibition. Alternative antiplatelet recommended."
+          "recommendation": "Zmniejszone hamowanie płytek krwi. Rozważ alternatywny lek przeciwpłytkowy."
         },
         "GG": {
           "phenotype": "Normal Metabolizer",
           "risk_level": "Low",
           "action": "Standard dosing",
-          "recommendation": "Normal platelet inhibition response. Standard therapeutic dose recommended."
+          "recommendation": "Prawidłowa agregacja płytek. Stosuj dawkę standardową."
         }
       }
     },
@@ -61,19 +61,69 @@
           "phenotype": "Poor Transporter Function",
           "risk_level": "High",
           "action": "Lower dose or substitute",
-          "recommendation": "Markedly elevated plasma concentrations of simvastatin acid. High risk of myopathy/rhabdomyolysis. Prescribe lower dose or switch to pravastatin/rosuvastatin."
+          "recommendation": "Podwyższone stężenie statyny w osoczu. Wysokie ryzyko miopatii i rabdomiolizy. Zmniejsz dawkę maksymalną do 20 mg lub zamień na prawastatynę/rozuwastatynę."
         },
         "CT": {
           "phenotype": "Decreased Transporter Function",
           "risk_level": "Moderate",
           "action": "Cautious dosing",
-          "recommendation": "Intermediate plasma levels. Avoid doses exceeding 20 mg daily."
+          "recommendation": "Umiarkowane ryzyko miopatii. Unikaj dawek powyżej 20 mg/dobę."
         },
         "TT": {
           "phenotype": "Normal Transporter Function",
           "risk_level": "Low",
           "action": "Standard dosing",
-          "recommendation": "Typical hepatic uptake. Standard dosing guidelines apply."
+          "recommendation": "Prawidłowy wychwyt wątrobowy. Standardowe dawkowanie."
+        }
+      }
+    },
+    {
+      "gene": "VKORC1",
+      "rsid": "rs9923231",
+      "drug": "Warfarin",
+      "risk_matrix": {
+        "AA": {
+          "phenotype": "High Warfarin Sensitivity",
+          "risk_level": "High",
+          "action": "Lower initial dose",
+          "recommendation": "Wysoka wrażliwość na warfarynę. Znaczące ryzyko krwotoków. Zredukuj dawkę początkową o 50% i ściśle monitoruj wskaźnik INR."
+        },
+        "AG": {
+          "phenotype": "Intermediate Sensitivity",
+          "risk_level": "Moderate",
+          "action": "Moderate dose reduction",
+          "recommendation": "Umiarkowana wrażliwość. Zmniejsz dawkę początkową o około 25%."
+        },
+        "GG": {
+          "phenotype": "Normal Sensitivity",
+          "risk_level": "Low",
+          "action": "Standard dosing",
+          "recommendation": "Typowa wrażliwość na lek przeciwzakrzepowy. Stosuj standardowy schemat nasycający."
+        }
+      }
+    },
+    {
+      "gene": "DPYD",
+      "rsid": "rs3918290",
+      "drug": "Fluorouracil",
+      "risk_matrix": {
+        "AA": {
+          "phenotype": "DPD Deficiency (Complete)",
+          "risk_level": "High",
+          "action": "Strictly contraindicated",
+          "recommendation": "Całkowity brak aktywności dehydrogenazy dihydropirymidynowej. Bezwzględne przeciwwskazanie ze względu na ryzyko zgonu i ciężkiej mielotoksyczności."
+        },
+        "AG": {
+          "phenotype": "DPD Deficiency (Intermediate)",
+          "risk_level": "High",
+          "action": "Reduce dose by 50%",
+          "recommendation": "Częściowy niedobór enzymu. Zredukuj dawkę o 50% i monitoruj wczesne objawy toksyczności (zapalenie błon śluzowych, neutropenia)."
+        },
+        "GG": {
+          "phenotype": "Normal DPD Activity",
+          "risk_level": "Low",
+          "action": "Standard dosing",
+          "recommendation": "Standardowa aktywność enzymu DPD. Standardowy schemat chemioterapii."
         }
       }
     }
