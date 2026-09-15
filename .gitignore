@@ -1,0 +1,19 @@
+# Python i wirtualne środowisko
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Dane dynamiczne (ignorujemy zawartość, zostawiamy strukturę)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/logs/*
+!data/logs/.gitkeep
+
+# Specyficzne dla macOS i PyCharm
+.DS_Store
+.idea/
